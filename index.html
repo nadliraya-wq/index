@@ -3,6 +3,34 @@
     <title>Portal Siswa SMAN 3 Bandung</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="icon" type="image/x-icon" href="school.png">
+    <style>
+        /* --- Animasi untuk tulisan Selamat Datang --- */
+        .animasi-selamat {
+            font-size: 2em;
+            font-weight: bold;
+            opacity: 0;
+            transform: translateY(50px);
+            animation: munculDariBawah 2s ease-out forwards;
+        }
+        
+        /* --- Keyframes Animasi --- */
+        @keyframes munculDariBawah {
+            0% {
+                opacity: 0;
+                transform: translateY(50px);
+                letter-spacing: 3px;
+            }
+            50% {
+                opacity: 0.5;
+                transform: translateY(10px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+                letter-spacing: 1px;
+            }
+        }
+    </style>
 </head>
 
 <body>
@@ -11,7 +39,7 @@
   <header>
     <a href="index.html"><img src="sman3bandung.png" alt="Logo Sekolah"></a>
     <div class="identitas">
-      <h1>SMAN 3 Bandung</h1>
+      <h1 class="animasi-selamat">SMAN 3 Bandung</h1>
     </div>
 
     <!-- Bagian Navigasi -->
